@@ -5,7 +5,9 @@ export function Entry({ one, two, setplayerOne,setplayerTwo }) {
   return (
     <div className="entry">
         <TextField
+        className={"inputbox"}
         label="Player 1"
+        autoFocus="true"
         value={setplayerOne}
         onChange={(e) => one(e.target.value)}
         variant="outlined"
